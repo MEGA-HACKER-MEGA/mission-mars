@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	 crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+	 crossorigin="anonymous">
+
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+	 crossorigin="anonymous">
+
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+	 crossorigin="anonymous">
+
+	</script>
+	<meta charset="utf-8">
+	<title>MARS!</title>
+	<link rel="icon" href="https://img.icons8.com/color/2x/mars-planet.png">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+	<nav>
+		<div class="menu-icon">
+			<span class="fas fa-bars"></span>
+         </div>
+         <div class="logo">
+            MARS!         </div>
+         <div class="nav-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#information">Information</a></li>
+            <li><a href="#carousel">Images</a></li>
+            <li><a href="#solar-system">Solar System</a></li>
+         </div>
+         <div class="search-icon">
+            <span class="fas fa-"></span>
+         </div>
+         <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+         </div>
+      </nav>
+      <div class="content">
+         <header class="space">MISSION MARS!</header>
+      </div>
+      <script>
+         const menuBtn = document.querySelector(".menu-icon span");
+         const searchBtn = document.querySelector(".search-icon");
+         const cancelBtn = document.querySelector(".cancel-icon");
+         const items = document.querySelector(".nav-items");
+         const form = document.querySelector("form");
+         menuBtn.onclick = ()=>{
+           items.classList.add("active");
+           menuBtn.classList.add("hide");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+         cancelBtn.onclick = ()=>{
+           items.classList.remove("active");
+           menuBtn.classList.remove("hide");
+           searchBtn.classList.remove("hide");
+           cancelBtn.classList.remove("show");
+           form.classList.remove("active");
+           cancelBtn.style.color = "#ff3d00";
+         }
+         searchBtn.onclick = ()=>{
+           form.classList.add("active");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+      </script>
+     <header>
+      <img id="imagemars" src="https://th.bing.com/th/id/R9a84bd9985a2d65c3b3fd6fcdb2f2b2c?rik=uskxIysuB%2fqmOw&riu=http%3a%2f%2fwww.cool2bkids.com%2fwp-content%2fuploads%2f2014%2f05%2fMars.jpg&ehk=5IB3%2fLZ%2fHwt64Pn0htMD9m%2fQtTXtfxJA5qQI0xHrGWo%3d&risl=&pid=ImgRaw" alt="Marsimage">
+     </header>
+  <section id="information"><h4>Mars is a planet. It is the fourth planet from the Sun. It is the next planet beyond Earth. Mars is more than 142 million miles from the Sun. The planet is about half the size of Earth. A day on Mars is 24.6 hours. A year on Mars is 687 Earth days. Mars is known as the Red Planet. It is red because the soil looks like rusty iron. Mars has two small moons. Their names are Phobos (FOE-bohs) and Deimos (DEE-mohs). Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System after Mercury. In English, Mars carries a name of the Roman god of war, and is often referred to as the "Red Planet" because the reddish iron oxide prevalent on its surface gives it a reddish appearance that is distinctive among the astronomical bodies visible to the naked eye. Mars can easily be seen from Earth, as can its reddish coloring.
+Mars is a terrestrial planet with a thin atmosphere, having surface features like those of the impact craters of the Moon, and valleys, deserts, and polar ice caps of Earth It has two moons, Phobos and Deimos, which are small and irregularly shaped.
+It is nearly 7,000 kilometres (km) wide; just over half the width of the Earth. Its volume is about 15% of the Earth. Since a lot of the Earth is covered by water, the total surface area of the Mars is nearly as large as all of the land on the Earth. It is possible that its size may eventually permit human colonies.How Is NASA Exploring Mars Today?
+Today, three NASA spacecraft are circling, or orbiting Mars. The spacecraft are using scientific tools to measure the volcanoes, canyons, craters, temperature and the kinds of minerals on Mars. They also are taking pictures and searching for water.
+A robot that moves around the planet, called a rover, is exploring the Red Planet's land. The rover is named Curiosity. The rover travels around taking pictures and looking closely at the planet’s soil and rocks. A robot that stays in one place is called a lander. The InSight lander is measuring earthquakes on Mars, called marsquakes. NASA uses pictures and information from the spacecraft, rover and lander to learn more about Mars.
+How Will NASA Explore Mars in the Future?
+NASA wants to send people to explore the Red Planet. But first, the space agency will send more robots. The Perseverance rover carried a small helicopter. They landed on Mars on Feb. 18, 2021. One of the rover's jobs will be to collect rocks and soil. NASA plans to bring the rocks and soil back to Earth on a future mission. This will be the first time a mission will bring something home from Mars. The small helicopter is named Ingenuity. The helicopter will disconnect from the rover and see if it can fly by itself on Mars. If it works, NASA could build other helicopters like it to help explore Mars or other planets.How Is NASA Exploring Mars Today?
+Today, three NASA spacecraft are circling, or orbiting Mars. The spacecraft are using scientific tools to measure the volcanoes, canyons, craters, temperature and the kinds of minerals on Mars. They also are taking pictures and searching for water.
+A robot that moves around the planet, called a rover, is exploring the Red Planet's land. The rover is named Curiosity. The rover travels around taking pictures and looking closely at the planet’s soil and rocks. A robot that stays in one place is called a lander. The InSight lander is measuring earthquakes on Mars, called marsquakes. NASA uses pictures and information from the spacecraft, rover and lander to learn more about Mars.What Is Mars Like?
+Mars is very cold. The average temperature on Mars is minus 80 degrees Fahrenheit -- way below freezing!
+Mars is rocky with canyons, volcanoes and craters all over it. Red dust covers almost all of Mars. It has clouds and wind, just as Earth does. Sometimes the wind blows the red dust into a dust storm. Tiny dust storms can look like tornados, and large ones can cover the whole planet! Mars has about one-third the gravity of Earth. A rock dropped on Mars would fall slower than a rock dropped on Earth. Things weigh less on Mars than they weigh on Earth. A person who weighs 100 pounds on Earth would only weigh about 38 pounds on Mars because of less gravity.
+The air around Mars does not have much oxygen. People need oxygen to breathe. The air is mostly a gas called carbon dioxide.
+What Has NASA Learned About Mars?
+NASA has used both orbiting spacecraft (spacecraft that fly around the planet) and robots on the ground to learn more about Mars. In 1965, Mariner 4 was the first NASA spacecraft to get a close look at the planet. In 1976, Viking 1 and Viking 2 were the first NASA spacecraft to land on Mars. They took pictures and explored the ground. Since then, more spacecraft have flown near or landed on Mars.
+NASA's Spirit and Opportunity rovers landed on Mars in January 2004. They found proof that water once flowed on Mars. Living things need water to survive. So, any sign of water on Mars would mean that there could be, or could have been, life on the planet.</h4></section>
+<br><br><br>
+<section id="carousel">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="imgcar  "src="https://images2.alphacoders.com/705/thumbbig-705512.webp" class="d-block w-100" alt="Mars image">
+    </div>
+    <div class="carousel-item">
+      <img class="imgcar" src="https://images3.alphacoders.com/681/thumbbig-681652.webp">
+    </div>
+    <div class="carousel-item">
+      <img class="imgcar" src="https://images8.alphacoders.com/374/thumbbig-374852.webp" class="d-block w-100" alt="Mars image">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</section>
+<br><br>
+<section id="solar-system">
+<h1>THE SOLAR SYSTEM!</h1>
+<a href="https://en.wikipedia.org/wiki/Mars" id="a">
+<h4 id="aboutsolar-text">The Solar System is the gravitationally bound system of the Sun and the objects that orbit it, either directly or indirectly. Of the objects that orbit the Sun directly, the largest are the eight planets, with the remainder being smaller objects, the dwarf planets and small Solar System bodies. Of the objects that orbit the Sun indirectly—the natural satellites—two are larger than the smallest planet, Mercury.</h4>
+</a>
+<br><br>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Mars"><button class="btn">Learn more...</button></a>
+<br><br>
+<img id="solarimg" src="https://th.bing.com/th/id/OIP.o_NNO1Mq0nBUn4zxqcbtQQHaEK?pid=ImgDet&rs=1" alt="Solar-system image">
+<br><br><br>
+<span>
+<center>
+<br><br>
+  <img id="img1"src="https://img.icons8.com/color/48/000000/mercury-planet.png"/>
+
+<img id="img2"src="https://img.icons8.com/color/48/000000/venus-planet.png"/>
+
+<img id="img3" src="https://img.icons8.com/fluent/48/000000/earth-planet.png"/>
+&nbsp;&nbsp;
+<img id="img4" src="https://img.icons8.com/color/48/000000/mars-planet.png"/>
+&nbsp;&nbsp;
+<img id="img5"src="https://img.icons8.com/color/48/000000/jupiter-planet.png"/>
+&nbsp;&nbsp;
+<img id="img6" src="https://img.icons8.com/color/48/000000/saturn-planet.png"/>
+&nbsp;&nbsp;
+<img id="img7" src="https://img.icons8.com/color/48/000000/uranus-planet.png"/>
+&nbsp;&nbsp;
+<img id="img8"src="https://img.icons8.com/color/48/000000/neptune-planet.png"/>
+&nbsp;&nbsp;
+<img id="img9"src="https://img.icons8.com/color/48/000000/pluto-dwarf-planet.png"/>
+<br><br>
+<iframe src="https://www.solarsystemscope.com/iframe" width="100%" style="min-width:500px; min-height: 400px; border: 2px solid #0f5c6e;"></iframe>
+
+</center>
+</span>
+</section>
+<br><br><br><br><br><br>
+<footer>
+   <center>
+ <a href="#"><button class="button" href="#">Home</button></a>
+ <br><br>
+ <a href="#information"><button class="button" href="#information" >Information</button></a>
+ <br><br>
+ <a href="#carousel"> <button class="button" href="#carousel" >Images</button> </a>
+ <br><br>
+ <a href="#solar-system"><button class="button">Solar System</button></a>
+
+   </center>
+ </footer>
+ <br><br><br><br>
+   </body>
+</html>
